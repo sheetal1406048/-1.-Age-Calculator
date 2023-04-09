@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="./photos/fav.png">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>AGE CALCULATOR</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "formContainer">
+            <form>   
+                <h2 id = "formTitle">CALCULATE YOUR AGE</h2>
+                <br>
+    
+                <!--Taking User name as Input-->
+                <label for="userName" class = "formInput" >Your Name</label> </br><br>
+                <input type="text" id = "userName" maxlength="10" required></br></br>
+    
+                <!--Taking Date of Birth as Input-->
+                <label for="DateOfBirth" class = "formInput">Your Date of Birth</label></br><br>
+                 <input type="date" id = "DateOfBirth"></br></br>
+
+    
+                <button id ="btn">SUBMIT</button>
+                <br>
+                
+            </form>
+        </div>
+
+        
+        <div id = "resultContainer" class = "grid">
+            <div id = "gridItem1"><h3 class = "formInput itemAge" id = "showMyName">AGE</h3></div>
+            <div class = "item"><h3 id = "gridItem2">Years</h3></div>
+            <div class = "item"><h3 id = "gridItem3">Months</h3></div>
+            <div class = "item"><h3 id = "gridItem4">Days</h3></div>
+        </div>
+
+    </div>
+
+    
+    <script src = "./index.js">
+       
+
+    </script>
+</body>
+</html>

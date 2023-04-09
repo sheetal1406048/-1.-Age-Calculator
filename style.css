@@ -1,0 +1,130 @@
+body{
+    margin : 0;
+    padding : 0;
+    background-color: #001233;
+}
+
+.container{
+    margin:3% 10% 10% 10%;
+    padding:1% 5% 3% 5%;
+    border:0px 2px 2px 0 solid white;
+    box-shadow: 20px 20px 20px #1b4458;
+
+}
+#formTitle{
+    text-align : center;
+    color:#FF595A;
+    letter-spacing: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.formInput{
+    color:#f5f1ee;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;   
+}
+
+.formInput:hover{
+    color:#FF595A;
+}
+
+input{
+    width:100%;
+    height:35px;
+    border:4px solid #001233;
+    padding:2px;
+    text-align: center;
+}
+
+#btn{
+    display : block;
+    padding:10px;
+    border-radius: 3px;
+    background-color:#FF595A;
+    color:#001233;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    font-weight:900;
+    width:100%;
+    border:4px solid #FF595A;
+    border-radius:1%;
+    height:40px;
+}
+
+#btn:hover{
+    color:white;
+    background-color:#FF597f;
+    border:4px solid #FF597f;
+    font-weight: bolder;
+}
+
+
+
+.grid{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    margin:1%;
+    grid-column-gap:10px ;
+}
+
+#gridItem1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    }
+
+.item{
+    background-color: #1b4458;
+    text-align: center;
+    padding:20px;
+    box-shadow:1px 1px 5px #f5f1ee;
+    color:#f5f1ee;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+
+/*Media Query*/
+
+
+
+@media screen and (max-width :768px){
+    
+    .container{
+        margin:3% 10% 10% 10%;
+        padding:1% 5% 2% 5%;
+        box-shadow: 10px 10px 10px #1b4458;
+    }
+
+    #formTitle{
+        letter-spacing: 2px;
+    }
+
+    .formInput{
+        letter-spacing: 2px;    
+    }
+
+    input{
+        width:100%;
+        height:25px;
+        border:2px solid #001233;
+        padding:2px;
+        text-align: center;
+    }
+
+    
+    
+    .grid{
+        
+        grid-template-columns: auto;
+        grid-row-gap:10px
+    }
+
+    #gridItem1{
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+}    
